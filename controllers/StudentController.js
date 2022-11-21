@@ -1,5 +1,14 @@
 const { Student } = require('../models')
 
+const FindStudents = async (req, res) => {
+  try {
+    const students = await Student.findAll()
+    res.send(students)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const CreateStudent = async (req, res) => {
   try {
     const student = await Student.create(req.body)
@@ -22,5 +31,6 @@ const FindStudent = async (req, res) => {
 
 module.exports = {
   CreateStudent,
-  FindStudent
+  FindStudent,
+  FindStudents
 }
