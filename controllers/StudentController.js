@@ -29,8 +29,18 @@ const FindStudent = async (req, res) => {
   }
 }
 
+const DeleteStudent = async (req, res) => {
+  try {
+    await Student.destroy({ where: { id: req.params.studentId } })
+    res.send({ msg: 'Student Deleted' })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   CreateStudent,
   FindStudent,
-  FindStudents
+  FindStudents,
+  DeleteStudent
 }

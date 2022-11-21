@@ -4,5 +4,6 @@ const controller = require('../controllers/StudentController')
 router.post('/create', controller.CreateStudent)
 router.get('/retrieve', controller.FindStudents)
 router.get('/:studentId', controller.FindStudent)
+router.get('/delete/:studentId', controller.DeleteStudent)
 
 module.exports = router
