@@ -13,6 +13,22 @@ module.exports = (sequelize, DataTypes) => {
   }
   Grade.init(
     {
+      studentId: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'students',
+          key: 'id'
+        }
+      },
+      courseId: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'courses',
+          key: 'id'
+        }
+      },
       score: DataTypes.DECIMAL,
       letter: DataTypes.STRING
     },
