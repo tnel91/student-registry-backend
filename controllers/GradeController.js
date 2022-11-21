@@ -52,6 +52,18 @@ const UpdateGrade = async (req, res) => {
   }
 }
 
+const GetCourseWithStudent = async (req, res) => {
+  try {
+    const course = await Course.findOne({
+      where: { id: req.params.courseId },
+      include: [{ model: Student, as: 'course_grade' }]
+    })
+    res.send(course)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const GetCourseWithStudents = async (req, res) => {
   try {
     const course = await Course.findAll({
@@ -68,5 +80,6 @@ module.exports = {
   GetStudentsWithCourse,
   UpdateGrade,
   GetStudentWithCourse,
-  GetCourseWithStudents
+  GetCourseWithStudents,
+  GetCourseWithStudent
 }
