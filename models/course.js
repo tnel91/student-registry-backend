@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       name: DataTypes.STRING,
       credit_hours: DataTypes.INTEGER,
-      course_number: DataTypes.DECIMAL
+      course_number: DataTypes.INTEGER
     },
     {
       sequelize,

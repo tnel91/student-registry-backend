@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       course_number: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
