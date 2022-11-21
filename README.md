@@ -1,4 +1,4 @@
-# student-registry-backend
+# Student-Registry-Backend
 
 ## Date: 11/18/2022
 
@@ -20,7 +20,7 @@
 
 ### **_Description_**
 
-The purpose of this application is to dislay information about a student and the classes they are enrolled in. A user will be able to view a class and see the grade each enrolled student has in that class. The user will also be able to view a list of the classes enrolled by an individual student and the associated grade.
+The purpose of this application is to display information about a student and the classes they are enrolled in. A user will be able to view a class and see the grade each enrolled student has in that class. The user will also be able to view a list of the classes enrolled by an individual student and the associated grade.
 
 ---
 

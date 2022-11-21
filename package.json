@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tnel91/student-registry-backend#readme",
   "dependencies": {
+    "@ngneat/falso": "^6.2.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
