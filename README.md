@@ -4,7 +4,7 @@
 
 ---
 
-#### [Frontend-Repo](https://github.com/tnel91/student-registry-frontend) | [Backend-Repo](https://github.com/tnel91/student-registry-backend) | [Trello](https://trello.com/b/BA8BnKnE/student-registry) | [Heroku](https://student-registry-app.herokuapp.com/)
+#### [Frontend-Repo](https://github.com/tnel91/student-registry-frontend) | [Backend-Repo](https://github.com/tnel91/student-registry-backend) | [Trello](https://trello.com/b/BA8BnKnE/student-registry) | [Deployment](https://main.dyzqsxxtteyld.amplifyapp.com/)
 
 ---
 
